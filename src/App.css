@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body, html{
+  margin: 0;
+  padding: 0; 
+  font-family: 'Poppins', sans-serif;;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Header{
+   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+
+
+
+.Header h2{
+    color: #7b9a1b;
+    font-weight: bolder;
+     font-size: 40px;
+     padding-left: 70px;
+     padding-right: 150px;
+}
+
+
+form{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32%;
+  gap: 5px;
+  background-image: url(/src/Images/background.jpeg);
+ }
+
+ form  input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+   width: 50%;
+  background: #f1f1f1;
+}
+
+form  input[type=text]:focus{
+   outline-color: #7b9a1b;
+}
+
+ form input[type = "submit"]{
+  width: 30%;
+  padding: 10px;
+  background: #7b9a1b;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+
+ }
+
+.photos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap:40px;
+}
+
+ 
+.photo{
+  display:flex;
+  flex-direction: column;
+  background-color: #E8E8E8	;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px 10px;
+ }
+
+ .Album h2{
+  color: #7b9a1b;
+  font-weight: bolder;
+   font-size: 40px;
+   padding-left: 90px;
+ }
+
+.photo p{
+  font-size: 15px;
+  height:50px;
+}
+.startingMessage{
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.startingMessage div{
+   width:  85%;
+   height: 200px; 
+   background-color:#E8E8E8;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px 15px;
+}
+.startingMessage div h1{
+  color:#7b9a1b;
+}
+
+.error{
+ background-color: red;
+ color: white;
+  width: 50%;
+ border-radius: 10px;
+ padding-left: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .Header{
+    justify-content: center;
+  }
+  
+  .Header h2{
+    text-align: center;
+    font-size: 30px;
+     padding: 0;
+      
+  }
+
+  form{
+    padding-left: 10%;
+  }
+  
+}
